@@ -1,20 +1,23 @@
 # data-transformer
 
-Transform asset data for QuaAsset
-
-This project is created by [create-a-typescript-lib](https://github.com/backrunner/create-a-typescript-lib).
+Transform asset data for QuaAsset.
 
 ## Usage
 
-To build this project, you can run this command:
+Step 1: Install this package.
 
 ```bash
-npm run build
+$ npm i @quajs/buffer-transformer
 ```
 
-Also, you can use `npm run watch` to start a file changes.
+Step 2: Import to your project.
 
-All changes you make will immediately trigger compilation and take effect on the generated script.
+```ts
+import { transformBuffer } from '@quajs/buffer-transformer';
+
+const blob = transformBuffer<Blob>('asset.png', buffer);
+console.log(window.URL.createObjectURL(blob));
+```
 
 ## License
 

@@ -1,4 +1,4 @@
-# data-transformer
+# BufferTransformer
 
 Transform asset data for QuaAsset.
 
